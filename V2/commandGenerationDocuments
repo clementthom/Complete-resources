@@ -1,0 +1,28 @@
+I aim to make a instrument : a workstation that create sounds and allow to compose on it.
+The instrument I aim to create take inspiration of are the Synclavier 9600, the Fairlight Series III, the Emulator III, the PPG Wave 2.3, the PPG realiser, the DX1, the Matrix12 and the OBX. It would have a monochromatic interface with a tactile interface like the Synclavier/fairlight (maybe later with a few colors like the PPG realiser) and all the functionnalities of the instruments listed above, the aim is to have the most flexible/modulable instrument possible, while being extremeny fast (use of C). It would have analog and digital boards, working with a system of voice like the Emulator III; I want this to be reflected in the hardware (sound generation separated from the analog )
+
+
+I want to start the project by emulating some part of the instrument. Before starting with the big project, I want to make an hybrid synthesizer with oscillators emulated by DACs and the Pi 4, 8 stereo polyphony (16 mono polyphony), but the rest of the sound analog processed (like the emu III). I want to go bare metal at first, but after try to do the same with a small Linux. All the code would be coded in C. I intend to test every functionnality on my PC (on Solus Linux) (especially sound, with portaudio) before making the program for the Raspberry.
+The code should emulate the hardware topology, so the PC to Raspberry port should be easier (for example different .c files for oscillators/sound generators, envelopes, filters, effects, FFT ...).
+
+As said previously, the electronic part is analog, to get a warm sound. However, modern hybrid gear is considered not warm enough in terms of sound, I which that the electronic parts I'll make allow to have a sound as rich and full as the Synclavier/EmulatorIII/Matrix12. I'll thus create different boards using KiCAD, and would like to test them by simulation (maybe SPICE in KiCAD, but I'm open to alternatives if better).
+
+
+Imagine I'm a complete beginner in C, electronics, embedded systems and I never made a project (so no knowledge about project management, how to structure directories, work with people on Github/gitlab ...). As I said previously, I want a resource that is a mix between a tutorial and a course (more like a course tho, I really want to understand everythng, not just blindly copy paste everything) with the principle "learning by doing". As I want to become an expert at C for embedded systems and electronics to make my gear, I want this resource to be absolutely extensive, see the most basic topics to the most complex (as long as it's relevant to the projects) and OMIT NO DETAILS about how to make the 2 projects mentionned above work. As such, it should provide clear and extensive explaination about every topic or notion worth mentionning. I want to know everything about how to make synthesizers/keyboards like the one I mentionned before.
+
+Since you can't generate extralong documents, I want you to generate several .md files (chapter) I can then combine into 2 .md files, one for each project. A section (chapter) can be approached in several documents if needed to be treated completely. Here is what I expect :
+
+1st resource (set of documents) : about the hybrid synthesizer : 10 to 15 documents (called chapters) about 10 pages each (more pages if possible/clearer for the document structure), so around 1000 lines per chapter/document. If you can't generate such files, divide them in several parts with less lines, but the total amount of lines should be the same.
+
+2st set of documents : about the workstation : 20 to 30 documents about 10 pages each (more pages if possible/clearer for the document structure). Around 1000 lines per chapter. If you can't generate such files, divide them in several parts with less lines, but the total amount of lines should be the same.
+
+
+Of course those documents can be longer if it allows the separation between documents to be smoother. I'll let you choose the chapters/parts (organisation) of those 2 resources, just make sure to have them make sense. The work you did for the precedent .md files was good, but they were way too short and basic to really learn anything in depth. You can if it helps you take their parts as basis for the 2 resources, and add some if relevant.  Make sure to directly integrate the code in the documents (ex : oscillators.c), otherwise I won't see it (the generated lines won't be accounted as the same as content lines mentionned while describing the expectations about the resources).
+
+Please name and generate the .md files in a way I can easily merge them in a single .md per resource. Don't generate them in bundles, as the .md files will be shorter.
+
+
+
+For the second resource, the workstation, I want even more details and content, as this project will be really complex (at least 500 lines per .md files without counting .c and .h files), except miscellanous ones, like introduction). For information I use VSCode on Solus and Geany with BCM 283.
+
+

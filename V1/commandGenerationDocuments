@@ -1,0 +1,12 @@
+Imagine I'm a complete beginner in C, electronics, embedded systems and I never made a project (so no knowledge about project management, how to structure directories, work with people on Github/gitlab ...). As I said previously, I want a resource that is a mix between a tutorial and a course with the principle "learning by doing". As I want to become an expert at C for embedded systems and electronics to make my gear, I want this resource to be absolutely extensive and OMIT NO DETAILS about how to make the 2 projects mentionned above work. As such, it should provide clear and extensive explaination about every topic or notion worth mentionning. I want to know everything about how to make synthesizers/keyboards like the one I mentionned before.
+
+Since you can't generate extralong documents, I want you to generate several .md files I can then combine into 2 .md files, one for each project. A section can be approached in several documents if needed to be treated completely. Here is what I expect :
+
+1st set of documents : about the hybrid synthesizer : 10 to 15 documents about 10 pages each (more pages if possible/clearer for the document structure)
+
+2st set of documents : about the hybrid synthesizer : 20 to 30 documents about 10 pages each (more pages if possible/clearer for the document structure)
+
+
+Of course those documents can be longer if it allows the separation between documents to be smoother. I'll let you choose the chapters/parts (organisation) of those 2 resources, just make sure to have them make sense. The work you did for the precedent .md files was good, but they were way too short and basic to really learn anything in depth. You can if it helps you take their parts as basis for the 2 resources, and add some if relevant.
+
+please name the .md files in a way I can easily merge them.
