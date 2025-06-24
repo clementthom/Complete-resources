@@ -30,6 +30,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add V3/V3-1(accurate)/V3/V3-1(accurate)/resource2FULL-smoothed.md
+          git add "V3/V3-1(accurate)/V3/V3-1(accurate)/resource2FULL-smoothed.md"
           git commit -m "Automated: Add smoothed Markdown file" || echo "No changes to commit"
           git push
