@@ -1,0 +1,35 @@
+name: Smooth and Merge Markdown
+
+on:
+  push:
+    paths:
+      - 'V3/V3-1(accurate)/resource2FULL.md'
+      - 'smooth_md.py'
+      - '.github/workflows/smooth-md.yml'
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  smooth_markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run smoothing script
+        run: |
+          python smooth_md.py
+
+      - name: Commit and push smoothed file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add V3/V3-1(accurate)/V3/V3-1(accurate)/resource2FULL-smoothed.md
+          git commit -m "Automated: Add smoothed Markdown file" || echo "No changes to commit"
+          git push
